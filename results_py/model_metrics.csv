@@ -1,0 +1,3 @@
+model,auc
+LogReg,0.6580457812963236
+GradientBoosting,0.7036364415145265

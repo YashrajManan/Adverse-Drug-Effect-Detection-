@@ -1,0 +1,32 @@
+# raw FAERS data (huge, re-fetchable from FDA servers)
+data_py/2024_Q1/
+data_py/2024_Q2/
+data_py/2024_Q3/
+data_py/2024_Q4/
+data_py/model_features.csv
+data_py/case_drug_long.csv
+data_py/case_reac_long.csv
+data_py/total_cases.csv
+
+# large intermediate result files (small top-200 versions are pushed instead)
+results_py/signal_scores.csv
+results_R/signal_scores_R.csv
+
+# R workspace junk
+.RData
+.Rhistory
+
+# learning / private teaching files (not portfolio deliverables)
+01_build*.ipynb
+01-build-original.ipynb
+02_build*.R
+*practiced*
+*tried*
+*ran_once*
+_gen*.py
+WORKFLOW.md
+PROJECT_NARRATIVE.md
+INTERVIEW_QA.md
+INTERPRETATION.md
+FDA22B_Learning_Compendium.pdf
+fda22b_pipeline*.png
