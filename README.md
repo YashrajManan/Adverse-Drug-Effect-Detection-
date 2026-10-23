@@ -101,18 +101,17 @@ seriousness is fundamentally a clinical judgment that these structural fields on
 ## Learning through project
 
 A cross-language discrepancy caught by comparing the *same real number* across two independent
-implementations — not by either script crashing — is one of the most reliable ways to find a real bug:
-here, R's PRR/ROR was silently computed against the wrong denominator (the classifier's filtered
-subset rather than the true full case universe), and it was the mismatch against Python's numbers, not
-an error message, that surfaced it. A disproportionality-analysis scope choice (here: including all
-four drug roles rather than suspect-only) is not a neutral technical default — it's a real
-methodological decision that shifts results in a knowable, disclosed direction (likely understating
-true suspect-drug signal strength), and naming that direction explicitly is what keeps a departure from
-convention honest rather than hidden. Recovering a well-documented real-world signal (Paxlovid/COVID
-rebound) from a from-scratch PRR/ROR implementation is meaningful external validation that the pipeline
-itself is computing something real, independent of any of the project's own internal cross-checks.
-Reporting confounded signals (confounding by indication) alongside genuine ones, and naming which is
-which, is more scientifically honest than filtering the output down to only the "clean" results.
+implementations — not by either script crashing — is one of the most reliable ways to find a real problem:
+a silent miscalculation produces no error message, only a mismatch against a second, independently-built
+answer. A disproportionality-analysis scope choice (here: including all four drug roles rather than
+suspect-only) is not a neutral technical default — it's a real methodological decision that shifts results
+in a knowable, disclosed direction (likely understating true suspect-drug signal strength), and naming that
+direction explicitly is what keeps a departure from convention honest rather than hidden. Recovering a
+well-documented real-world signal (Paxlovid/COVID rebound) from a from-scratch PRR/ROR implementation is
+meaningful external validation that the pipeline itself is computing something real, independent of any of
+the project's own internal cross-checks. Reporting confounded signals (confounding by indication) alongside
+genuine ones, and naming which is which, is more scientifically honest than filtering the output down to
+only the "clean" results.
 
 ## Limitations
 
